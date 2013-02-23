@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2217A2A16D87340001779BC /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A2916D87340001779BC /* ImageViewController.m */; };
+		F2217A2D16D874ED001779BC /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A2C16D874ED001779BC /* FlickrPhotoTVC.m */; };
+		F2217A3016D8751E001779BC /* LatestFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A2F16D8751E001779BC /* LatestFlickrPhotosTVC.m */; };
+		F2217A3316D87EBB001779BC /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3216D87EBB001779BC /* HawaiiImageViewController.m */; };
+		F2217A3916D8D7FF001779BC /* SPoTPhotoListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3816D8D7FF001779BC /* SPoTPhotoListTVC.m */; };
+		F2217A3C16D8E182001779BC /* SPoTRecentListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3B16D8E182001779BC /* SPoTRecentListTVC.m */; };
 		F2619FF416D6E20A007295FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF316D6E20A007295FB /* UIKit.framework */; };
 		F2619FF616D6E20A007295FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF516D6E20A007295FB /* Foundation.framework */; };
 		F2619FF816D6E20A007295FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF716D6E20A007295FB /* CoreGraphics.framework */; };
@@ -22,6 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2217A2816D87340001779BC /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		F2217A2916D87340001779BC /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		F2217A2B16D874ED001779BC /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
+		F2217A2C16D874ED001779BC /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
+		F2217A2E16D8751E001779BC /* LatestFlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestFlickrPhotosTVC.h; sourceTree = "<group>"; };
+		F2217A2F16D8751E001779BC /* LatestFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestFlickrPhotosTVC.m; sourceTree = "<group>"; };
+		F2217A3116D87EBB001779BC /* HawaiiImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HawaiiImageViewController.h; sourceTree = "<group>"; };
+		F2217A3216D87EBB001779BC /* HawaiiImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HawaiiImageViewController.m; sourceTree = "<group>"; };
+		F2217A3716D8D7FF001779BC /* SPoTPhotoListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPoTPhotoListTVC.h; sourceTree = "<group>"; };
+		F2217A3816D8D7FF001779BC /* SPoTPhotoListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPoTPhotoListTVC.m; sourceTree = "<group>"; };
+		F2217A3A16D8E182001779BC /* SPoTRecentListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPoTRecentListTVC.h; sourceTree = "<group>"; };
+		F2217A3B16D8E182001779BC /* SPoTRecentListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPoTRecentListTVC.m; sourceTree = "<group>"; };
 		F2619FF016D6E20A007295FB /* SPoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2619FF316D6E20A007295FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2619FF516D6E20A007295FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,9 +105,21 @@
 		F2619FF916D6E20A007295FB /* SPoT */ = {
 			isa = PBXGroup;
 			children = (
+				F2217A2816D87340001779BC /* ImageViewController.h */,
+				F2217A2916D87340001779BC /* ImageViewController.m */,
+				F2217A2B16D874ED001779BC /* FlickrPhotoTVC.h */,
+				F2217A2C16D874ED001779BC /* FlickrPhotoTVC.m */,
+				F2217A2E16D8751E001779BC /* LatestFlickrPhotosTVC.h */,
+				F2217A2F16D8751E001779BC /* LatestFlickrPhotosTVC.m */,
 				F261A00216D6E20B007295FB /* FlickrAppDelegate.h */,
+				F2217A3116D87EBB001779BC /* HawaiiImageViewController.h */,
+				F2217A3216D87EBB001779BC /* HawaiiImageViewController.m */,
 				F261A00316D6E20B007295FB /* FlickrAppDelegate.m */,
 				F261A00B16D6E20B007295FB /* MainStoryboard.storyboard */,
+				F2217A3A16D8E182001779BC /* SPoTRecentListTVC.h */,
+				F2217A3B16D8E182001779BC /* SPoTRecentListTVC.m */,
+				F2217A3716D8D7FF001779BC /* SPoTPhotoListTVC.h */,
+				F2217A3816D8D7FF001779BC /* SPoTPhotoListTVC.m */,
 				F261A00E16D6E20B007295FB /* FlickrViewController.h */,
 				F261A01616D6E29B007295FB /* FlickrFetcher */,
 				F261A00F16D6E20B007295FB /* FlickrViewController.m */,
@@ -193,6 +223,12 @@
 				F261A00416D6E20B007295FB /* FlickrAppDelegate.m in Sources */,
 				F261A01016D6E20B007295FB /* FlickrViewController.m in Sources */,
 				F261A01A16D6E29B007295FB /* FlickrFetcher.m in Sources */,
+				F2217A2A16D87340001779BC /* ImageViewController.m in Sources */,
+				F2217A2D16D874ED001779BC /* FlickrPhotoTVC.m in Sources */,
+				F2217A3016D8751E001779BC /* LatestFlickrPhotosTVC.m in Sources */,
+				F2217A3316D87EBB001779BC /* HawaiiImageViewController.m in Sources */,
+				F2217A3916D8D7FF001779BC /* SPoTPhotoListTVC.m in Sources */,
+				F2217A3C16D8E182001779BC /* SPoTRecentListTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +351,7 @@
 				F261A01516D6E20B007295FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
