@@ -27,6 +27,18 @@
 {
     [super viewDidLoad];
 
+//        for (GameResult *result in [[GameResult allGameResults] sortedArrayUsingSelector:self.sortSelector]) { //
+//    NSMutableArray *allGameResults = [[NSMutableArray alloc] init];
+//    for (id plist in [[[NSUserDefaults standardUserDefaults] dictionaryForKey:ALL_RESULTS_KEY] allValues]) {
+//        GameResult *result = [[GameResult alloc] initFromPropertyList:plist];
+//        [allGameResults addObject:result];
+//    }
+//    NSMutableDictionary *mutableGameResultsFromUserDefaults = [[[NSUserDefaults standardUserDefaults] dictionaryForKey:ALL_RESULTS_KEY] mutableCopy];
+//    if (!mutableGameResultsFromUserDefaults) mutableGameResultsFromUserDefaults = [[NSMutableDictionary alloc] init];
+//    mutableGameResultsFromUserDefaults[[self.start description]] = [self asPropertyList];
+//    [[NSUserDefaults standardUserDefaults] setObject:mutableGameResultsFromUserDefaults forKey:ALL_RESULTS_KEY];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

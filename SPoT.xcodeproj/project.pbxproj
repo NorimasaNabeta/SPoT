@@ -13,6 +13,9 @@
 		F2217A3316D87EBB001779BC /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3216D87EBB001779BC /* HawaiiImageViewController.m */; };
 		F2217A3916D8D7FF001779BC /* SPoTPhotoListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3816D8D7FF001779BC /* SPoTPhotoListTVC.m */; };
 		F2217A3C16D8E182001779BC /* SPoTRecentListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3B16D8E182001779BC /* SPoTRecentListTVC.m */; };
+		F2217A3F16D8EF38001779BC /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3E16D8EF38001779BC /* GameResult.m */; };
+		F2217A4116D99C05001779BC /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4016D99C05001779BC /* iPadStoryboard.storyboard */; };
+		F2217A4416D99E3B001779BC /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A4316D99E3B001779BC /* AttributedStringViewController.m */; };
 		F2619FF416D6E20A007295FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF316D6E20A007295FB /* UIKit.framework */; };
 		F2619FF616D6E20A007295FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF516D6E20A007295FB /* Foundation.framework */; };
 		F2619FF816D6E20A007295FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF716D6E20A007295FB /* CoreGraphics.framework */; };
@@ -40,6 +43,11 @@
 		F2217A3816D8D7FF001779BC /* SPoTPhotoListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPoTPhotoListTVC.m; sourceTree = "<group>"; };
 		F2217A3A16D8E182001779BC /* SPoTRecentListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPoTRecentListTVC.h; sourceTree = "<group>"; };
 		F2217A3B16D8E182001779BC /* SPoTRecentListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPoTRecentListTVC.m; sourceTree = "<group>"; };
+		F2217A3D16D8EF38001779BC /* GameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResult.h; sourceTree = "<group>"; };
+		F2217A3E16D8EF38001779BC /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResult.m; sourceTree = "<group>"; };
+		F2217A4016D99C05001779BC /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		F2217A4216D99E3A001779BC /* AttributedStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringViewController.h; sourceTree = "<group>"; };
+		F2217A4316D99E3B001779BC /* AttributedStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringViewController.m; sourceTree = "<group>"; };
 		F2619FF016D6E20A007295FB /* SPoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2619FF316D6E20A007295FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2619FF516D6E20A007295FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,12 +118,17 @@
 				F2217A2B16D874ED001779BC /* FlickrPhotoTVC.h */,
 				F2217A2C16D874ED001779BC /* FlickrPhotoTVC.m */,
 				F2217A2E16D8751E001779BC /* LatestFlickrPhotosTVC.h */,
+				F2217A4016D99C05001779BC /* iPadStoryboard.storyboard */,
 				F2217A2F16D8751E001779BC /* LatestFlickrPhotosTVC.m */,
 				F261A00216D6E20B007295FB /* FlickrAppDelegate.h */,
 				F2217A3116D87EBB001779BC /* HawaiiImageViewController.h */,
 				F2217A3216D87EBB001779BC /* HawaiiImageViewController.m */,
+				F2217A4216D99E3A001779BC /* AttributedStringViewController.h */,
+				F2217A4316D99E3B001779BC /* AttributedStringViewController.m */,
 				F261A00316D6E20B007295FB /* FlickrAppDelegate.m */,
 				F261A00B16D6E20B007295FB /* MainStoryboard.storyboard */,
+				F2217A3D16D8EF38001779BC /* GameResult.h */,
+				F2217A3E16D8EF38001779BC /* GameResult.m */,
 				F2217A3A16D8E182001779BC /* SPoTRecentListTVC.h */,
 				F2217A3B16D8E182001779BC /* SPoTRecentListTVC.m */,
 				F2217A3716D8D7FF001779BC /* SPoTPhotoListTVC.h */,
@@ -209,6 +222,7 @@
 				F261A00816D6E20B007295FB /* Default@2x.png in Resources */,
 				F261A00A16D6E20B007295FB /* Default-568h@2x.png in Resources */,
 				F261A00D16D6E20B007295FB /* MainStoryboard.storyboard in Resources */,
+				F2217A4116D99C05001779BC /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +243,8 @@
 				F2217A3316D87EBB001779BC /* HawaiiImageViewController.m in Sources */,
 				F2217A3916D8D7FF001779BC /* SPoTPhotoListTVC.m in Sources */,
 				F2217A3C16D8E182001779BC /* SPoTRecentListTVC.m in Sources */,
+				F2217A3F16D8EF38001779BC /* GameResult.m in Sources */,
+				F2217A4416D99E3B001779BC /* AttributedStringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +332,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SPoT/SPoT-Prefix.pch";
 				INFOPLIST_FILE = "SPoT/SPoT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -327,7 +345,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SPoT/SPoT-Prefix.pch";
 				INFOPLIST_FILE = "SPoT/SPoT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
