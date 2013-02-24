@@ -27,9 +27,43 @@
    shouldHideViewController:(UIViewController *)vc
               inOrientation:(UIInterfaceOrientation)orientation
 {
-    return NO;
+//    return NO; // never hide it.
+    return UIInterfaceOrientationIsPortrait(orientation);
 }
 
+- (void) setSplitViewBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+//    UIToolbar *toolbar = [self toolbar];
+//    NSMutableArray *toolbarItems = [toolbar.items mutableCopy];
+//    if (_splitViewBarButtonItem) {
+//        [toolbarItems removeObject:_splitViewBarButtonItem];
+//    }
+//
+//    if (barButtonItem) {
+//        [toolbarItems insertObject:barButtonItem atIndex:0];
+//    }
+//    toolbar.items =toolbarItems;
+//    _splitViewBarButtonItem = barButtonItem;
+    
+}
+- (void)splitViewController:(UISplitViewController *)svc
+     willHideViewController:(UIViewController *)aViewController
+          withBarButtonItem:(UIBarButtonItem *)barButtonItem
+       forPopoverController:(UIPopoverController *)pc
+{
+//    barButtonItem.title =@"Master";
+//    id detailViewController = [self.splitViewController.viewControllers lastObject];
+//    [detailViewController setSplitViewBarButtonItem:barButtonItem ];
+    
+}
+- (void) splitViewController:(UISplitViewController *)svc
+      willShowViewController:(UIViewController *)aViewController
+   invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+//    id detailViewController = [self.splitViewController.viewControllers lastObject];
+//    [detailViewController setSplitViewBarButtonItem:nil];
+    
+}
 
 // sets the Model
 // reloads the UITableView (since Model is changing)
