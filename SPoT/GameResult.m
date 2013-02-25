@@ -5,7 +5,7 @@
 //  Created by CS193p Instructor.
 //  Copyright (c) 2013 Stanford University.
 //  All rights reserved.
-//
+// 05_MultiMVC Matchismo
 
 #import "GameResult.h"
 

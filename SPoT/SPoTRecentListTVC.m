@@ -7,12 +7,34 @@
 //
 
 #import "SPoTRecentListTVC.h"
+#import "FlickrFetcher.h"
+#import "RecentsStore.h"
 
 @interface SPoTRecentListTVC ()
 
 @end
 
 @implementation SPoTRecentListTVC
+@synthesize recentPlaces=_recentPlaces;
+
+- (NSArray*) recentPlaces
+{
+    if(! _recentPlaces){
+        _recentPlaces = [RecentsStore getList];
+    }
+    return _recentPlaces;
+}
+- (void) setRecentPlaces:(NSArray *)recentPlaces
+{
+    _recentPlaces = recentPlaces;
+}
+
+//
+//
+// 05_MultiMVC Matchismo
+- (void)updateUI
+{
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,31 +48,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-//        for (GameResult *result in [[GameResult allGameResults] sortedArrayUsingSelector:self.sortSelector]) { //
-//    NSMutableArray *allGameResults = [[NSMutableArray alloc] init];
-//    for (id plist in [[[NSUserDefaults standardUserDefaults] dictionaryForKey:ALL_RESULTS_KEY] allValues]) {
-//        GameResult *result = [[GameResult alloc] initFromPropertyList:plist];
-//        [allGameResults addObject:result];
-//    }
-//    NSMutableDictionary *mutableGameResultsFromUserDefaults = [[[NSUserDefaults standardUserDefaults] dictionaryForKey:ALL_RESULTS_KEY] mutableCopy];
-//    if (!mutableGameResultsFromUserDefaults) mutableGameResultsFromUserDefaults = [[NSMutableDictionary alloc] init];
-//    mutableGameResultsFromUserDefaults[[self.start description]] = [self asPropertyList];
-//    [[NSUserDefaults standardUserDefaults] setObject:mutableGameResultsFromUserDefaults forKey:ALL_RESULTS_KEY];
-//    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Segue
 
@@ -66,11 +65,11 @@
     if ([sender isKindOfClass:[UITableViewCell class]]) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         if (indexPath) {
-            if ([segue.identifier isEqualToString:@"Show Image"]) {
+            if ([segue.identifier isEqualToString:@"Show Recent"]) {
                 if ([segue.destinationViewController respondsToSelector:@selector(setImageURL:)]) {
-//                    NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
-//                    [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
-//                    [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                    NSURL *url = [FlickrFetcher urlForPhoto:self.recentPlaces[indexPath.row] format:FlickrPhotoFormatLarge];
+                    [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
+                    [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
                 }
             }
         }
@@ -87,7 +86,7 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [self.recentPlaces count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -96,10 +95,9 @@
     static NSString *CellIdentifier = @"Recent Photo";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-//    NSString *tag = [[self.photoList allKeys] objectAtIndex:indexPath.item];
-    cell.textLabel.text = @"";
-    cell.detailTextLabel.text = @"";
+    NSDictionary *photo = [self.recentPlaces objectAtIndex:indexPath.row];
+    cell.textLabel.text = [FlickrFetcher stringValueFromKey:photo nameKey:FLICKR_PHOTO_TITLE];
+    cell.detailTextLabel.text = [FlickrFetcher stringValueFromKey:photo nameKey:FLICKR_PHOTO_DESCRIPTION];
     
     return cell;
 }

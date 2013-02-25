@@ -22,7 +22,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="QRD-ee-VEO" kind="push" identifier="Show Recent" id="3nx-8g-Lhl"/>
+                                    <segue destination="azf-Du-NSr" kind="push" identifier="Show Recent" id="hVG-80-F1A"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrX-fT-mBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="-126"/>
+            <point key="canvasLocation" x="1652" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y5Y-Q8-dFs">
@@ -223,6 +223,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3nx-8g-Lhl"/>
+        <segue reference="hVG-80-F1A"/>
     </inferredMetricsTieBreakers>
 </document>

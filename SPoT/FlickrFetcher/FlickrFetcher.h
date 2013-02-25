@@ -40,4 +40,6 @@ typedef enum {
 // fetch a bunch of recently taken georeferenced Flickr photo dictionaries
 + (NSArray *)latestGeoreferencedPhotos;
 
++ (NSString *) stringValueFromKey:(NSDictionary *)dict nameKey:(NSString*)key;
+
 @end

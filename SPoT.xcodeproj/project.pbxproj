@@ -16,12 +16,10 @@
 		F2217A3F16D8EF38001779BC /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A3E16D8EF38001779BC /* GameResult.m */; };
 		F2217A4116D99C05001779BC /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4016D99C05001779BC /* iPadStoryboard.storyboard */; };
 		F2217A4416D99E3B001779BC /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A4316D99E3B001779BC /* AttributedStringViewController.m */; };
-		F2217A4716D9A9E2001779BC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4516D9A9E1001779BC /* Icon.png */; };
-		F2217A4816D9A9E2001779BC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4616D9A9E2001779BC /* Icon@2x.png */; };
 		F2217A4A16D9AA60001779BC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4916D9AA60001779BC /* Icon.png */; };
 		F2217A4C16D9AA67001779BC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4B16D9AA66001779BC /* Icon@2x.png */; };
-		F2217A4E16D9AA92001779BC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4D16D9AA92001779BC /* Icon-72.png */; };
 		F2217A5016D9AA98001779BC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F2217A4F16D9AA98001779BC /* Icon-72.png */; };
+		F2217A5316DABF8E001779BC /* RecentsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F2217A5216DABF8D001779BC /* RecentsStore.m */; };
 		F2619FF416D6E20A007295FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF316D6E20A007295FB /* UIKit.framework */; };
 		F2619FF616D6E20A007295FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF516D6E20A007295FB /* Foundation.framework */; };
 		F2619FF816D6E20A007295FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2619FF716D6E20A007295FB /* CoreGraphics.framework */; };
@@ -60,6 +58,8 @@
 		F2217A4B16D9AA66001779BC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		F2217A4D16D9AA92001779BC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		F2217A4F16D9AA98001779BC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		F2217A5116DABF8D001779BC /* RecentsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentsStore.h; path = ../../ref/2012_FlickrFetcher/RecentsStore.h; sourceTree = "<group>"; };
+		F2217A5216DABF8D001779BC /* RecentsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentsStore.m; path = ../../ref/2012_FlickrFetcher/RecentsStore.m; sourceTree = "<group>"; };
 		F2619FF016D6E20A007295FB /* SPoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2619FF316D6E20A007295FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2619FF516D6E20A007295FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +142,8 @@
 				F2217A4316D99E3B001779BC /* AttributedStringViewController.m */,
 				F261A00316D6E20B007295FB /* FlickrAppDelegate.m */,
 				F261A00B16D6E20B007295FB /* MainStoryboard.storyboard */,
+				F2217A5116DABF8D001779BC /* RecentsStore.h */,
+				F2217A5216DABF8D001779BC /* RecentsStore.m */,
 				F2217A3D16D8EF38001779BC /* GameResult.h */,
 				F2217A3E16D8EF38001779BC /* GameResult.m */,
 				F2217A3A16D8E182001779BC /* SPoTRecentListTVC.h */,
@@ -241,11 +243,8 @@
 				F261A00A16D6E20B007295FB /* Default-568h@2x.png in Resources */,
 				F261A00D16D6E20B007295FB /* MainStoryboard.storyboard in Resources */,
 				F2217A4116D99C05001779BC /* iPadStoryboard.storyboard in Resources */,
-				F2217A4716D9A9E2001779BC /* Icon.png in Resources */,
-				F2217A4816D9A9E2001779BC /* Icon@2x.png in Resources */,
 				F2217A4A16D9AA60001779BC /* Icon.png in Resources */,
 				F2217A4C16D9AA67001779BC /* Icon@2x.png in Resources */,
-				F2217A4E16D9AA92001779BC /* Icon-72.png in Resources */,
 				F2217A5016D9AA98001779BC /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +268,7 @@
 				F2217A3C16D8E182001779BC /* SPoTRecentListTVC.m in Sources */,
 				F2217A3F16D8EF38001779BC /* GameResult.m in Sources */,
 				F2217A4416D99E3B001779BC /* AttributedStringViewController.m in Sources */,
+				F2217A5316DABF8E001779BC /* RecentsStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

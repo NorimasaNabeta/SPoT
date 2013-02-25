@@ -11,6 +11,9 @@
 
 @interface FlickrPhotoTVC : UITableViewController
 
+- (NSString *)titleForRow:(NSUInteger)row;
+- (NSString *)subtitleForRow:(NSUInteger)row;
+
 // the Model for this VC
 // an array of dictionaries of Flickr information
 // obtained using Flickr API

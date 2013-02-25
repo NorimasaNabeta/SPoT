@@ -8,6 +8,7 @@
 
 #import "FlickrPhotoTVC.h"
 #import "FlickrFetcher.h"
+#import "RecentsStore.h"
 
 
 @interface FlickrPhotoTVC() <UISplitViewControllerDelegate>
@@ -94,6 +95,8 @@
                     NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
                     [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
                     [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                    [RecentsStore pushList:self.photos[indexPath.row]];
+
                 }
             }
         }

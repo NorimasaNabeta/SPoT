@@ -30,14 +30,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4E-Rc-h9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="-114"/>
+            <point key="canvasLocation" x="1279" y="-1048"/>
         </scene>
         <!--Flickr PhotoTVC-->
         <scene sceneID="1tw-QS-FGY">
             <objects>
                 <tableViewController id="23I-Jj-wYk" customClass="FlickrPhotoTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pRY-8Y-vyT">
-                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="739"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -75,14 +75,59 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ6-nG-PHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="-1408"/>
+            <point key="canvasLocation" x="1285" y="-2088"/>
+        </scene>
+        <!--PoT Recent ListTVC-->
+        <scene sceneID="yxT-SQ-OCQ">
+            <objects>
+                <tableViewController id="RZO-Pz-g6Q" customClass="SPoTRecentListTVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C6S-9d-Dpl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="739"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Recent Photo" textLabel="tvg-6J-flr" detailTextLabel="wVZ-fm-QoM" style="IBUITableViewCellStyleSubtitle" id="aUS-zI-59P">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvg-6J-flr">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVZ-fm-QoM">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Ywf-MK-Eze" kind="replace" identifier="Show Recent" splitViewControllerTargetIndex="1" id="JEJ-jh-SMD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RZO-Pz-g6Q" id="PNX-Or-whO"/>
+                            <outlet property="delegate" destination="RZO-Pz-g6Q" id="vCC-1d-adT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="gpY-xQ-miq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zom-kD-1Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-1124"/>
         </scene>
         <!--PoT Photo ListTVC - Root View Controller-->
         <scene sceneID="wLm-5H-zMX">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="1lJ-Qp-Cha" customClass="SPoTPhotoListTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tDN-Cd-BNI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="739"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -116,11 +161,12 @@
                             <outlet property="delegate" destination="1lJ-Qp-Cha" id="hOg-3q-vzu"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="Of2-4C-giw"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="pDi-ck-YeF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0X-AH-saA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="-1408"/>
+            <point key="canvasLocation" x="804" y="-2094"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hk3-g3-pZd">
@@ -130,12 +176,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="1lJ-Qp-Cha" kind="relationship" relationship="rootViewController" id="FxC-gc-FAY"/>
+                        <segue destination="whZ-n1-nLj" kind="relationship" relationship="rootViewController" id="55T-XF-p3D"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3T-I8-Wob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-316" y="-1408"/>
+            <point key="canvasLocation" x="-316" y="-1448"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="k4F-7C-0sJ">
@@ -150,6 +196,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9m-V6-QMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1298" y="-939"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="44k-V0-Ty7">
+            <objects>
+                <tabBarController id="whZ-n1-nLj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="WaN-hw-gCd"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Fjo-xG-MmF">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1lJ-Qp-Cha" kind="relationship" relationship="viewControllers" id="8Hb-8x-sYy"/>
+                        <segue destination="RZO-Pz-g6Q" kind="relationship" relationship="viewControllers" id="nqr-t7-Vix"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wop-Pn-nLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="-1438"/>
         </scene>
     </scenes>
     <classes>
@@ -167,6 +233,9 @@
         </class>
         <class className="SPoTPhotoListTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SPoTPhotoListTVC.h"/>
+        </class>
+        <class className="SPoTRecentListTVC" superclassName="FlickrPhotoTVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPoTRecentListTVC.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlickrPhotoTVC.h"
 
-@interface SPoTRecentListTVC : UITableViewController
-
+//@interface SPoTRecentListTVC : UITableViewController
+@interface SPoTRecentListTVC : FlickrPhotoTVC
+@property (nonatomic,strong) NSArray *recentPlaces;
 @end
