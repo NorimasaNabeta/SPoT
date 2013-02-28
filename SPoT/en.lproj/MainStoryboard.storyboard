@@ -35,7 +35,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mo-p7-Bxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="490"/>
+            <point key="canvasLocation" x="483" y="526"/>
         </scene>
         <!--PoT Photo ListTVC - SPoT-->
         <scene sceneID="vIu-LF-Qy6">
@@ -84,7 +84,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eO7-rB-lrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="-176"/>
+            <point key="canvasLocation" x="483" y="-192"/>
         </scene>
         <!--Flickr PhotoTVC-->
         <scene sceneID="XVf-LK-vIv">
@@ -133,7 +133,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aR5-e7-EFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="-122"/>
+            <point key="canvasLocation" x="1024" y="-192"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="gKx-pj-tN3">
@@ -143,6 +143,11 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="z00-EI-7Qv">
+                                <rect key="frame" x="142" y="116" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="0.71999999999999997" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="91c-bI-wm9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +157,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NgR-LX-3tE"/>
                     <connections>
+                        <outlet property="activeIndicator" destination="z00-EI-7Qv" id="VuH-v5-3F9"/>
                         <outlet property="scrollView" destination="91c-bI-wm9" id="LgG-cr-c4h"/>
                     </connections>
                 </viewController>
@@ -214,9 +220,27 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zR-sM-4wu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-73" y="230"/>
+            <point key="canvasLocation" x="-45" y="518"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="FlickrPhotoTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlickrPhotoTVC.h"/>
+        </class>
+        <class className="ImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activeIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="SPoTPhotoListTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPoTPhotoListTVC.h"/>
+        </class>
+        <class className="SPoTRecentListTVC" superclassName="FlickrPhotoTVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPoTRecentListTVC.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

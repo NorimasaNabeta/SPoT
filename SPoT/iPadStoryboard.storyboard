@@ -12,19 +12,25 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-S5-u5A">
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="0.71999999999999997" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8S-rh-ASg"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f8S-rh-ASg" firstAttribute="top" secondItem="7cY-eY-U5v" secondAttribute="top" type="default" id="YDR-ZZ-XI0"/>
+                            <constraint firstItem="5mV-S5-u5A" firstAttribute="centerY" secondItem="f8S-rh-ASg" secondAttribute="centerY" type="default" id="YNo-yH-gtj"/>
                             <constraint firstItem="f8S-rh-ASg" firstAttribute="bottom" secondItem="7cY-eY-U5v" secondAttribute="bottom" type="default" id="dMv-5S-blI"/>
                             <constraint firstItem="f8S-rh-ASg" firstAttribute="trailing" secondItem="7cY-eY-U5v" secondAttribute="trailing" type="default" id="n9N-kt-xiv"/>
                             <constraint firstItem="f8S-rh-ASg" firstAttribute="leading" secondItem="7cY-eY-U5v" secondAttribute="leading" type="default" id="pSR-dC-022"/>
+                            <constraint firstItem="5mV-S5-u5A" firstAttribute="leading" secondItem="7cY-eY-U5v" secondAttribute="leading" constant="365" id="sz9-0f-w8J"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Exm-Ee-coX"/>
                     <connections>
+                        <outlet property="activeIndicator" destination="5mV-S5-u5A" id="9JL-f5-GkS"/>
                         <outlet property="scrollView" destination="f8S-rh-ASg" id="fZs-C9-dRX"/>
                     </connections>
                 </viewController>
@@ -218,26 +224,6 @@
             <point key="canvasLocation" x="162" y="-1438"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="FlickrPhotoTVC" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlickrPhotoTVC.h"/>
-        </class>
-        <class className="ImageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SPoTPhotoListTVC" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPoTPhotoListTVC.h"/>
-        </class>
-        <class className="SPoTRecentListTVC" superclassName="FlickrPhotoTVC">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPoTRecentListTVC.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

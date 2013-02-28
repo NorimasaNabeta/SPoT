@@ -19,6 +19,13 @@
 
 #pragma mark - UISplitViewControllerDelegate
 
+// https://piazza.com/class#winter2013/codingtogetherios6/1121
+//-(void) viewDidLoad
+//{
+//    [super viewDidLoad];
+//    self.splitViewController.delegate = self;
+//}
+
 - (void)awakeFromNib
 {
     self.splitViewController.delegate = self;
